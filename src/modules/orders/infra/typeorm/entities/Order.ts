@@ -16,8 +16,8 @@ class Order {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  // @OneToOne(() => Customer)
-  // @JoinColumn({ name: 'customer_id' })
+  @OneToOne(() => Customer)
+  @JoinColumn({ name: 'customer_id' })
   customer: Customer;
 
   @OneToMany(() => OrdersProducts, ordersProducts => ordersProducts.order)
