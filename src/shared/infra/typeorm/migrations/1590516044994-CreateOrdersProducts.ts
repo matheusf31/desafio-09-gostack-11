@@ -32,7 +32,7 @@ export default class CreateOrdersProducts1590516044994
           {
             name: 'price',
             type: 'decimal',
-            precision: 2,
+            precision: 10,
             scale: 2,
           },
           {
